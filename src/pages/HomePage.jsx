@@ -38,7 +38,7 @@ const css = `
   #cursor {
     position: fixed; z-index: 9999; pointer-events: none;
     width: 10px; height: 10px;
-    border: 1px solid var(--goldL);
+    border: 4px solid var(--goldL);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.1s, width 0.25s, height 0.25s, background 0.25s;
