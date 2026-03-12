@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 
 const fonts = `
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
@@ -817,7 +816,7 @@ const brands = [
 
 // ── COMPONENT ─────────────────────────────────────────────────────────────────
 
-export default function HomePage() {
+export default function App() {
   const [workOpen, setWorkOpen] = useState(false);
   const [formData, setFormData] = useState({ name: "", brand: "", email: "", service: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -1079,19 +1078,19 @@ export default function HomePage() {
             <div className="fw-icon">◈</div>
             <div className="fw-title">The Brand Strategy Compendium</div>
             <div className="fw-desc">The complete philosophical and operational framework. The Founder's Covenant, all four Pillars, organizational hierarchy, financial architecture, and the full execution roadmap.</div>
-            <a href="/Brand_Strategy_Compendium_Expanded.pdf" className="fw-btn" target="_blank" rel="noreferrer">Download the Compendium →</a>
+            <a href="#" className="fw-btn">Download the Compendium →</a>
           </div>
           <div className="framework-card">
             <div className="fw-icon">◇</div>
             <div className="fw-title">The Brand Health Dashboard</div>
             <div className="fw-desc">The metrics that tell you if your brand is structurally sound. Brand identity, operational health, people and culture, and financial benchmarks with real targets.</div>
-            <Link to="/dashboard" className="fw-btn">View the Dashboard →</Link>
+            <a href="#" className="fw-btn">View the Dashboard →</a>
           </div>
           <div className="framework-card">
             <div className="fw-icon">○</div>
             <div className="fw-title">The Founder's Covenant</div>
             <div className="fw-desc">Five personal commitments every founder must make before any system can work. The most important section in the framework, and the most honest.</div>
-            <Link to="/covenant" className="fw-btn">Read the Covenant →</Link>
+            <a href="#" className="fw-btn">Read the Covenant →</a>
           </div>
           <div className={`framework-card${workOpen ? " primary" : ""}`} style={{ gridColumn: workOpen ? "span 2" : undefined }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 16 }}>
