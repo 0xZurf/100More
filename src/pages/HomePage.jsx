@@ -868,7 +868,7 @@ export default function HomePage() {
 
       {/* Nav */}
       <nav className={scrolled ? "scrolled" : ""}>
-        <div className="nav-logo">100More</div>
+        <div className="nav-logo">100Long</div>
         <div className="nav-links">
           <a href="#pillars">The Pillars</a>
           <a href="#roadmap">Roadmap</a>
@@ -887,7 +887,7 @@ export default function HomePage() {
           Brands that<br />last <em>100 years</em><br />are not built<br />by accident.
         </h1>
         <p className="hero-sub">
-          100More is a complete operational framework for building brand institutions,
+          100Long is a complete operational framework for building brand institutions,
           the kind that survive economic crises, leadership transitions, and trend cycles 
           by design, not by luck.
         </p>
@@ -974,7 +974,7 @@ export default function HomePage() {
           <div className="quote-text">
             A brand is not what you make. It is what you build around what you make.
           </div>
-          <div className="quote-attr">100More Framework</div>
+          <div className="quote-attr">100Long Framework</div>
         </div>
       </div>
 
@@ -1071,7 +1071,7 @@ export default function HomePage() {
         <div className="section-eyebrow">The Full System</div>
         <h2 className="section-title">Take the<br />Framework With You</h2>
         <p className="section-sub">
-          The complete 100More framework is available in full. Built to be read, shared, 
+          The complete 100Long framework is available in full. Built to be read, shared, 
           translated, and executed by any founder, in any language.
         </p>
         <div className="framework-grid">
@@ -1097,7 +1097,7 @@ export default function HomePage() {
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 16 }}>
               <div>
                 <div className="fw-icon">△</div>
-                <div className="fw-title">Work With 100More</div>
+                <div className="fw-title">Work With 100Long</div>
                 <div className="fw-desc">The framework exists. The execution is where most brands need support. Connect to bring this system into your organization with direct guidance.</div>
               </div>
             </div>
@@ -1110,7 +1110,7 @@ export default function HomePage() {
                   {[
                     { num: "01", name: "Brand Health Assessment", desc: "A guided, in-depth version of the dashboard assessment. You receive a personalized written readout across all four pillars with prioritized recommendations specific to your brand's stage and structure." },
                     { num: "02", name: "Brand Audit", desc: "A structured review of your brand's identity, operations, people, and financial health. Delivered as a comprehensive report with clear findings and an actionable next-step plan." },
-                    { num: "03", name: "Framework Implementation", desc: "Hands-on build-out of the 100More system inside your organization, phase by phase. From Brand Code to operational SOPs to compensation equity, we build it together." },
+                    { num: "03", name: "Framework Implementation", desc: "Hands-on build-out of the 100Long system inside your organization, phase by phase. From Brand Code to operational SOPs to compensation equity, we build it together." },
                     { num: "04", name: "Consulting Retainer", desc: "An ongoing strategic partnership for brands actively building toward longevity. Monthly touchpoints, real-time guidance, and a long-term commitment to the work." },
                   ].map((s, i) => (
                     <div className="service-card" key={i}>
@@ -1176,7 +1176,7 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer>
-        <div className="footer-logo">100More</div>
+        <div className="footer-logo">100Long</div>
         <div className="footer-note">A Framework for Brand Longevity · Built by JohnnyLeeXYZ</div>
       </footer>
     </div>

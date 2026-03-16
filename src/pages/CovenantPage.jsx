@@ -415,7 +415,7 @@ export default function CovenantPage() {
       <nav>
         <Link to="/" className="nav-back">
           <span className="nav-back-arrow">←</span>
-          Back to 100More
+          Back to 100Long
         </Link>
         <div
           className="nav-logo"
@@ -441,7 +441,7 @@ export default function CovenantPage() {
         {/* INTRO */}
         {screen === "intro" && (
           <div className={`intro ${exiting ? "fade-exit" : ""}`}>
-            <div className="intro-eyebrow">100More Framework</div>
+            <div className="intro-eyebrow">100Long Framework</div>
             <h1 className="intro-title">
               The Founder's<br /><em>Covenant</em>
             </h1>
@@ -510,7 +510,7 @@ export default function CovenantPage() {
               <button className="btn-ghost" onClick={() => advance("commitment", commitments.length - 1)}>
                 ← Back to Commitment V
               </button>
-              <Link to="/" className="btn-primary">Return to 100More →</Link>
+              <Link to="/" className="btn-primary">Return to 100Long →</Link>
               <a href="/Brand_Strategy_Compendium_Expanded.pdf" className="btn-ghost" target="_blank" rel="noreferrer">Download the Compendium</a>
             </div>
           </div>

@@ -561,7 +561,7 @@ export default function DashboardPage() {
       <div id="cursor" className={hovering ? "hov" : ""} style={{ left: cursor.x, top: cursor.y, position: "fixed" }} />
 
       <nav>
-        <Link to="/" className="nav-back">← Back to 100More</Link>
+        <Link to="/" className="nav-back">← Back to 100Long</Link>
         <div
           className="nav-logo"
           onClick={() => setView("info")}
@@ -577,12 +577,12 @@ export default function DashboardPage() {
       {view === "info" && (
         <>
           <div className="hero">
-            <div className="eyebrow">100More Framework</div>
+            <div className="eyebrow">100Long Framework</div>
             <h1 className="hero-title">
               How healthy is<br />your <em>brand?</em>
             </h1>
             <p className="hero-sub">
-              The Brand Health Dashboard is built around 16 structural metrics across the four pillars of the 100More framework. Review the benchmarks below, then unlock your personalized assessment.
+              The Brand Health Dashboard is built around 16 structural metrics across the four pillars of the 100Long framework. Review the benchmarks below, then unlock your personalized assessment.
             </p>
             <button className="hero-cta" onClick={startAssessment}>
               Begin Your Assessment →
