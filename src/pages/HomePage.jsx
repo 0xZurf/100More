@@ -821,6 +821,7 @@ export default function HomePage() {
   const [workOpen, setWorkOpen] = useState(false);
   const [formData, setFormData] = useState({ name: "", brand: "", email: "", service: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [selectedFounder, setSelectedFounder] = useState(null);
   const [openPillar, setOpenPillar] = useState(null);
@@ -1154,8 +1155,8 @@ export default function HomePage() {
                           <textarea className="form-textarea" placeholder="Where are you in the build? What are you trying to solve?" value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} />
                         </div>
                       </div>
-                      <button className="form-submit" onClick={() => { if (formData.name && formData.email) setSubmitted(true); }} disabled={!formData.name || !formData.email}>
-                        Send →
+                      <button className="form-submit" onClick={async () => { if (!formData.name || !formData.email) return; setSubmitting(true); try { const res = await fetch("https://formspree.io/f/mjgapevg", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(formData) }); if (res.ok) setSubmitted(true); } finally { setSubmitting(false); } }} disabled={!formData.name || !formData.email || submitting}>
+                        {submitting ? "Sending…" : "Send →"}
                       </button>
                     </>
                   ) : (
